@@ -1,9 +1,18 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let len = Math.floor(word.length / 2);
+  for (let i = 0; i < len; i++)
+    if (word[i] !== word[word.length - i - 1])
+      return false;
+  return true;
 }
 
 /* 
   Add your pseudocode here
+  get and input 
+  check if its a palidrome
+  if yes return true
+  if no return false
 */
 
 /*
